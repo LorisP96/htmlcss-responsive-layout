@@ -5,3 +5,63 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*******************************************************************
+                           COMMON
+********************************************************************/
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.flex-cont {
+    display: flex;
+}
+
+.mobile-padding {
+    padding: 0 2rem;
+}
+
+/*******************************************************************
+                           HEADER 
+********************************************************************/
+
+header {
+    background-color: #0084fd;
+    height: 80px;
+    /* test */
+    font-size: 30px;
+}
+
+header > nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0 2rem;
+}
+
+/*******************************************************************
+                           DESKTOP
+********************************************************************/
+
+@media screen and (min-width: 992px) {
+    .menu {
+        display: block;
+    }
+
+    .hamb-icon {
+        display: none;
+    }
+}
