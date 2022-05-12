@@ -21,13 +21,18 @@
 }
 
 .mobile-padding {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .text-center {
     text-align: center;
 }
 
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 /*******************************************************************
                            HEADER 
