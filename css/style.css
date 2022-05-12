@@ -32,6 +32,7 @@ header {
     height: 80px;
     /* test */
     font-size: 30px;
+    margin-bottom: 2rem;
 }
 
 header > nav {
@@ -50,6 +51,48 @@ header > nav {
 
 .menu li {
     margin: 0 2rem;
+}
+
+/*******************************************************************
+                           MAIN
+********************************************************************/
+
+.card {
+    background-color: #b5ddff;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-cont {
+    flex-wrap: wrap;
+}
+
+
+/*******************************************************************
+                           TABLET
+********************************************************************/
+
+@media screen and (min-width: 768px) {
+
+    .card {
+        width: calc((100% / 3) - 1rem);
+    }
+
+    .card-cont .card:first-child {
+        width: calc( (100% / 3 * 2) - 1rem);
+        margin-left: 1rem;
+    }
+    
+    .card-cont :nth-child(3) {
+        margin-left: 1rem;
+    }
+
+    .card-cont {
+        justify-content: space-between;
+        /* margin-left: -1rem;
+        margin-right: -1rem; */
+    }
 }
 
 /*******************************************************************
