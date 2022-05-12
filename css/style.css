@@ -111,6 +111,25 @@ header > nav {
 }
 
 /*******************************************************************
+                           FOOTER
+********************************************************************/
+
+footer {
+    background-color: #333333;
+    color: white;
+    /* test */
+    height: 150px;
+    padding: 1rem 0;
+}
+
+footer > div {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*******************************************************************
                            TABLET
 ********************************************************************/
 
@@ -142,6 +161,19 @@ header > nav {
 
     .benefit-card {
         width: calc((100% / 2) - 1rem);
+    }
+    
+    /* about-us */
+    .about-cont {
+        justify-content: space-evenly;
+    }
+
+    .about-cont div:first-child {
+        width: 55%;
+    }
+
+    .about-cont div:last-child {
+        width: 40%;
     }
 }
 
