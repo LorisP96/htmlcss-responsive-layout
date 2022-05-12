@@ -17,10 +17,15 @@
 
 .flex-cont {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mobile-padding {
     padding: 0 2rem;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
@@ -58,7 +63,7 @@ header > nav {
 /*******************************************************************
                            MAIN
 ********************************************************************/
-
+/* intro */
 .card {
     background-color: #b5ddff;
     border-radius: 15px;
@@ -66,21 +71,52 @@ header > nav {
     margin-bottom: 1rem;
 }
 
-.card-cont {
-    flex-wrap: wrap;
-}
-
-main section:nth-child(2) {
+/* purple */
+.back-purple {
     background-color: #9792e4;
 }
 
+.planning {
+    justify-content: center;
+}
+
+.plan {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.idea {
+    background-color: white;
+    width: calc(100% - 4rem);
+    margin: 1rem 2rem 3rem 2rem;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+/* partners */
+
+.partner-user {
+    border-radius: 25px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+/* benefits */
+.benefit-card {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
 
 /*******************************************************************
                            TABLET
 ********************************************************************/
 
 @media screen and (min-width: 768px) {
-
+    /* MAIN */
+    /* intro */
     .card {
         width: calc((100% / 3) - 1rem);
     }
@@ -98,6 +134,15 @@ main section:nth-child(2) {
         justify-content: space-between;
         margin-left: -1rem;
     }
+
+    /* benefits */
+    .benefit-cont {
+        justify-content: space-between;
+    }
+
+    .benefit-card {
+        width: calc((100% / 2) - 1rem);
+    }
 }
 
 /*******************************************************************
@@ -105,6 +150,7 @@ main section:nth-child(2) {
 ********************************************************************/
 
 @media screen and (min-width: 992px) {
+    /* HEADER */
     .menu {
         display: block;
     }
@@ -112,4 +158,31 @@ main section:nth-child(2) {
     .hamb-icon {
         display: none;
     }
+    /* MAIN */
+
+    /* purple */
+    .planning {
+        align-items: flex-end;
+    }
+
+    .plan {
+        max-width: 40%;
+    }
+
+    .idea {
+        max-width: 40%;
+        margin: 1rem;
+    }
+
+    /* benefits */
+    .benefit-cont {
+        justify-content: space-between;
+    }
+
+    .benefit-card {
+        width: calc((100% / 3) - 1rem);
+    }
+
+
+
 }
