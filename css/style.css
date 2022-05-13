@@ -96,6 +96,11 @@ a {
     margin: 1rem 0;
 }
 
+h3 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
 /*******************************************************************
                            MAIN
 ********************************************************************/
@@ -116,7 +121,6 @@ a {
 
 .card h3 {
     color: #0084fd;
-    font-size: 1.5rem;
 }
 
 .card span {
@@ -144,6 +148,7 @@ a {
 /* purple */
 .back-purple {
     background-color: #9792e4;
+    color: white;
 }
 
 .planning {
@@ -155,12 +160,22 @@ a {
     margin: 1rem 0;
 }
 
+.plan > img {
+    padding: 1rem;
+} 
+
 .idea {
+    color: black;
     background-color: white;
     width: calc(100% - 4rem);
     margin: 1rem 2rem 3rem 2rem;
     padding: 2rem;
     border-radius: 30px;
+    line-height: 2rem;
+}
+
+.idea > p {
+    font-style: italic;
 }
 
 /* partners */
