@@ -32,10 +32,20 @@
 section {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    line-height: 2rem;
 }
 
 img {
     width: 100%;
+}
+
+.back-purple {
+    background-color: #9792e4;
+    color: white;
+}
+
+.purple {
+    color: #9792e4;
 }
 /*******************************************************************
                            HEADER 
@@ -45,7 +55,7 @@ header {
     background-color: #0084fd;
     height: 80px;
     /* test */
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 2rem;
 }
 
@@ -115,7 +125,6 @@ h2 {
     border-radius: 15px;
     padding: 1rem;
     margin-bottom: 1rem;
-    line-height: 2rem;
     justify-content: center;
 }
 
@@ -150,15 +159,10 @@ h2 {
     color: #0084fd;
 }
 
-/* purple */
-.back-purple {
-    background-color: #9792e4;
-    color: white;
-}
+/* planning */
 
 .planning {
     justify-content: center;
-    line-height: 2rem;
 }
 
 .plan {
@@ -203,6 +207,42 @@ h2 {
     border-radius: 25px;
     margin: 1rem 0;
     padding: 1rem;
+    justify-content: center;
+}
+
+.partner-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+}
+
+/* testimonials list */
+.test-1 {
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.test-2 {
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.test-3 {
+    background-image: url(../img/testimonial3.jpg);
+}
+
+
+.cit {
+    font-size: 50px;
+    font-weight: 900;
+    vertical-align: middle;
+}
+
+.partner-name {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 /* benefits */
@@ -260,6 +300,21 @@ footer > div {
         margin-left: -1rem;
     }
 
+    /* partners */
+    .partner-user {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .partner-img {
+        margin: 0;
+    }
+
+    .partner-user > p {
+        width: 75%;
+        padding-left: 1rem;
+    }
+
     /* benefits */
     .benefit-cont {
         justify-content: space-between;
@@ -306,7 +361,7 @@ footer > div {
         align-self: flex-end;
     }
 
-    /* purple */
+    /* planning */
     .planning {
         align-items: flex-end;
     }
