@@ -39,13 +39,20 @@ img {
     width: 100%;
 }
 
-.back-purple {
-    background-color: #9792e4;
-    color: white;
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
 
-.purple {
-    color: #9792e4;
+.button {
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.button-large {
+    border-radius: 20px;
+    padding: 6px 40px;
 }
 /*******************************************************************
                            HEADER 
@@ -66,10 +73,6 @@ header > nav {
     color: white;
 }
 
-nav div {
-    line-height: 20px;
-}
-
 .menu {
     display: none;
 }
@@ -78,32 +81,8 @@ nav div {
     list-style-type: none;
 }
 
-.menu li {
-    margin-left: 2rem;
-
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.button {
-    background-color: white;
-    border-radius: 20px;
+.menu a {
     padding: 6px;
-    color: black;
-}
-
-.button-large {
-    background-color: #0084fd;
-    border-radius: 20px;
-    padding: 8px 40px;
-    color: white;
-}
-
-.button-box {
-    margin: 1rem 0;
 }
 
 h3 {
@@ -139,6 +118,10 @@ h2 {
 
 .card span {
     margin-top: 1rem;
+}
+
+.card a {
+    margin: 20px 0;
 }
 
 .img-box {
@@ -263,14 +246,8 @@ h2 {
     color:#5a6e7f;
 }
 
-.benefit-card div {
-    width: 50%;
-}
-
-.benefit-card .button-box {
-    border-radius: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.benefit-card .button-large {
+    margin-top: 2rem;
     font-weight: 700;
 }
 
@@ -297,7 +274,8 @@ h2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 1.5rem auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -324,8 +302,24 @@ h2 {
 }
 
 .last-cont {
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
+}
+
+.last-cont .button-large {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 25px 80px;
+    border-radius: 50px;
+    margin: 25px 0;
+}
+
+.last-cont p {
+    padding: 25px 0;
+}
+
+.last-cont h2 {
+    padding-bottom: 0;
 }
 
 /*******************************************************************
@@ -336,15 +330,24 @@ footer {
     background-color: #333333;
     color: white;
     /* test */
-    height: 150px;
+    height: 200px;
     padding: 1rem 0;
 }
 
-footer > div {
+footer > .last-cont {
     height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer a {
+    text-decoration: underline;
+}
+
+.last-cont > p, div{
+    padding: 0;
+    margin: 0;
 }
 
 /*******************************************************************
@@ -409,6 +412,10 @@ footer > div {
     .about-cont > div:last-child {
         width: 30%;
     }
+
+    .about-img {
+        margin: 1.5rem auto;
+    }
 }
 
 /*******************************************************************
@@ -463,4 +470,37 @@ footer > div {
 
 
 
+}
+
+/*******************************************************************
+                           colors
+********************************************************************/
+
+.back-purple {
+    background-color: #9792e4;
+    color: white;
+}
+
+.purple {
+    color: #9792e4;
+}
+
+.back-white {
+    background-color: white;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: #0084fd;
+}
+
+.back-blue {
+    background-color: #0084fd;
+}
+
+.black {
+    color: black;
 }
